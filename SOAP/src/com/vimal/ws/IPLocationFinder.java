@@ -14,6 +14,7 @@ public class IPLocationFinder {
 			GeoIPService service = new GeoIPService();
 			GeoIPServiceSoap geoIPServiceSoap = service.getGeoIPServiceSoap();
 			GeoIP geoIP = geoIPServiceSoap.getGeoIP(ipAddress);
+			System.out.println("This is country detected:");
 			System.out.println(geoIP.getCountryName());
 
 		}
