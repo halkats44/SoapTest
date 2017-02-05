@@ -19,7 +19,7 @@ public class DatabaseCreate {
 			System.out.println("Table Created Successfully" + recs);
 
 		} catch (Exception e) {
-			System.out.println(e);
+			System.out.println("This is the error : "+e);
 		} finally {
 			DatabaseDriver.closeConnection();
 		}
